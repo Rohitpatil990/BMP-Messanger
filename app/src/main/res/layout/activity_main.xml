@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/linaerbar"
+        android:layout_width="358dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="381dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="83dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:id="@+id/ImageLogoMain"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/logout"></ImageView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MainRecylerView"
+        android:layout_width="wrap_content"
+        android:layout_height="343dp"
+        android:layout_below="@+id/linaerbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="140dp" />
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="254dp"
+        android:layout_marginBottom="41dp"
+        android:src="@drawable/camera"></ImageView>
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="39dp"
+        android:src="@drawable/chat"></ImageView>
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="38dp"
+        android:src="@drawable/sett"></ImageView>
+
+</RelativeLayout>
